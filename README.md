@@ -34,8 +34,9 @@ brew install dssp
 ## Installation
 
 ```bash
-git clone https://github.com/your-lab/hairpred2
+git clone https://github.com/raghavagps/hairpred2
 cd hairpred2
+!wget https://webs.iiitd.edu.in/raghava/hairpred2/download/model
 pip install numpy pandas joblib gemmi biopython scipy
 ```
 
@@ -55,6 +56,8 @@ hairpred2/
 
 ```bash
 # Basic usage
+#download the model first
+!wget https://webs.iiitd.edu.in/raghava/hairpred2/download/model
 python hairpred2.py -i antigen.pdb -c A
 
 # Custom output prefix
